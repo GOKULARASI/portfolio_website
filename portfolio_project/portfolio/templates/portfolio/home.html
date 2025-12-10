@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio - Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="nav-container">
+      <div class="logo">PORTFOLIO WEBSITE</div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="nav-btn">Hire Me</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-subtitle">Hello, I'm</p>
+      <h1 class="hero-title">GOKULARASI</h1>
+      <p class="hero-role">Full-stack / Django Developer</p>
+      <p class="hero-text">
+        I build modern, responsive web applications using
+        Django, Python, and clean UI designs.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Contact Me</a>
+      </div>
+    </div>
+   <div class="hero-image-wrapper">
+  <div class="hero-image-circle">
+    <img src="{% static 'images/profile.jpg' %}" alt="Profile Image">
+  </div>
+</div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-container">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-text">
+        I'm a Computer Science student and web developer who loves
+        building clean, modern UIs and powerful backends with Django.
+        I focus on writing readable, maintainable code.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="section-container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, Responsive Design</p>
+        </div>
+        <div class="skill-card">
+          <h3>Backend</h3>
+          <p>Python, Django, REST APIs</p>
+        </div>
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <p>Git, VS Code, Figma</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="section-container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>QuickHire Job Portal</h3>
+          <p>A job listing website built with HTML, CSS, JS.</p>
+          <a href="#" class="project-link">View Details</a>
+        </div>
+        <div class="project-card">
+          <h3>QuickCart E-commerce</h3>
+          <p>E-commerce website with cart and checkout features.</p>
+          <a href="#" class="project-link">View Details</a>
+        </div>
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>Modern portfolio designed in Figma and built with Django.</p>
+          <a href="#" class="project-link">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="section-container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-text">
+        Have a project or want to collaborate? Send me a message.
+      </p>
+      <form class="contact-form">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© {{ 2025 }} Your Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
